@@ -1,61 +1,85 @@
-<!doctype html>
-<html lang="en-us">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio</title>
-  <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
-  <!-- Latest compiled and minified JavaScript -->
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></head>
-
+	<meta charset="UTF-8">
+	<title>Boot Portfolio</title>
+	<meta charset="UTF-8">
+	<title>Johan Rosario</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body>
-
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Johan Rosario</a>
-      <nav>
-        <ul class="nav nav-tabs">
-          <li role="presentation" class="active"><a href="index.html#">About</a></li>
-          <li role="presentation"><a href="portfolio.html">Portfolio</a></li>
-          <li role="presentation"><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-
-      
-
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Johan Rosario</a>
     </div>
-  </header>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>About Me</h1>
-
-      <img src="assets/images/profile.jpg" class="auth-image" alt="Your Name">
-
-      <p>Marshmallow jelly souffl&eacute; pastry biscuit gummi bears tootsie roll tootsie roll gingerbread. Cotton candy muffin gingerbread fruitcake. Sweet roll souffl&eacute; topping wafer croissant oat cake gummi&nbsp;bears.</p>
-
-      <p>Jelly-o cheesecake dessert fruitcake ice cream brownie liquorice souffl&eacute;. Caramels biscuit gummi bears tiramisu chupa chups. Croissant macaroon cotton candy cake pudding.</p>
-
-    </section>
-
-    <section class="sidebar">
-      <div id="connect">
-        <h2>Connect with Me</h2>
-
-        <a href="#"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
-        <a href="#"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
-        <a href="#"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
-      </div>
-    </section>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">About<span class="sr-only">(current)</span></a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="dropdown">
+          <a href="portfolio.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Portfolio <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+=
+    </div>
   </div>
+</nav>
 
-  <footer>
-    <div class="container">
-      Copyright &copy; 2017 Johan Rosario
-    </div>
-  </footer>
+	<div id="main-container" class="container">
+		<section class="main-section">
+		<div class="row">
+			<h1>About Me</h1>
+			<div class="col-md-6">
+			<img src="assets/images/profile.jpg" class="auth-image" alt="Your Name">
+			</div>
+			<div class="col-md-6">
+			<p>Marshmallow jelly souffl&eacute; pastry biscuit gummi bears tootsie roll tootsie roll gingerbread. Cotton candy muffin gingerbread fruitcake. Sweet roll souffl&eacute; topping wafer croissant oat cake gummi&nbsp;bears.</p>
+
+			<p>Jelly-o cheesecake dessert fruitcake ice cream brownie liquorice souffl&eacute;. Caramels biscuit gummi bears tiramisu chupa chups. Croissant macaroon cotton candy cake pudding.</p>
+				</div>
+
+			</section>
+
+		<section class="sidebar">
+			<div class="row">
+			<div id="connect">
+			<div class="col-md-12">
+				<h2>Connect with Me</h2>
+
+				<img src="assets/images/github-128.png" class="social" alt="Github">
+				<img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn">
+				<img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow">
+				</div>
+			</div>
+		</section>
+		</div>
+	<ul class="pager">
+	  <li><a href="contact.html">Previous</a></li>
+	  <li><a href="portfolio.html">Next</a></li>
+	</ul>
+	<footer>
+		<div class="container">
+			&copy; Copyright 2017 Johan Rosario
+		</div>
+	</footer>
 </body>
-
 </html>
